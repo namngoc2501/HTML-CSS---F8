@@ -1,0 +1,16 @@
+:root{
+    --text-color:red;
+}
+
+h1 {
+    --myColor: green;
+    color: var(--myColor);
+}
+
+h2{
+    color: var(--text-color);
+}
+
+h3{
+    color: var(--text-color);
+}

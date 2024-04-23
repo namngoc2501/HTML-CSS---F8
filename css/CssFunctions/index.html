@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nam Ngoc Shop</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      .box {
+        /* width: 100%; */
+        width: calc(80% + 20px);
+        height: 120px;
+        background-color: rgb(190, 124, 157);
+      }
+      .box::after{
+        content: attr(data-title);
+      }
+      a::after{
+        content: "("attr(href)")";
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" data-title = "Đây là cái box màu hồng!"></div>
+    <a href="https://fullstack.edu.vn">Học lập trình</a>
+    <div>
+      <h1>CSS Function</h1>
+      <h2>Var()</h2>
+      <h2>Linear-Gardient()</h2>
+      <h2>rgba()</h2>
+      <h2>rgb()</h2>
+      <h2>calc()</h2>
+      <h2>attr()</h2>
+    </div>
+  </body>
+</html>

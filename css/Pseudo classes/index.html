@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nam Ngoc Shop</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      .box {
+        /* width: 100%; */
+        width: calc(80% + 20px);
+        height: 120px;
+        background-color: rgb(190, 124, 157);
+      }
+      .box::before{
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+      }
+      .box::after{
+        content: "";
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+      }
+
+      /* h1::first-letter{
+        font-size: 50px;
+      } */
+
+      h1::first-line{
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <a href="https://fullstack.edu.vn">Học lập trình</a>
+    <div>
+      <h1>CSS Function <br/> hahahaha</h1>
+      <ul>
+        <li>:root</li>
+        <li>:hover</li>
+        <li>:active</li>
+        <li>:first-child</li>
+        <li>:last-child</li>
+      </ul>
+    </div>
+  </body>
+</html>
