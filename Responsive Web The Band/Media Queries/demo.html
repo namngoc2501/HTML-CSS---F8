@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .PC,
+      .Tablet,
+      .Mobile {
+        font-size: 68px;
+        display: none;
+      }
+
+      /*Break Point*/
+      /*PC*/
+      @media (min-width:1024px){
+        /*Only active when the screen's width >= 1024px*/
+        .PC{
+        color: red;
+        display: block;
+      }
+      }
+      /*tablet*/
+      @media (min-width:740px) and (max-width:1023px){
+        /*Only active when the screen's width >= 800px*/
+      .Tablet {
+        color: red;
+        display: block;
+      }
+      }
+      /*PC*/
+      @media (max-width:724px){
+        /*Only active when the screen's width >= 800px*/
+      .Mobile {
+        color: red;
+        display: block;
+      }
+      }
+
+      /*
+        PC: >= 1024px
+        Tablet: >= 740px & < 1024px
+        Mobile: <740px
+      */
+    </style>
+  </head>
+  <body>
+    <h1>MEDIA QUERIES</h1>
+    <h2 class="PC">PC</h2>
+    <h2 class="Tablet">Tablet</h2>
+    <h2 class="Mobile">Mobile</h2>
+  </body>
+</html>
